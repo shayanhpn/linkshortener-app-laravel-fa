@@ -1,0 +1,89 @@
+@font-face {
+    font-family: IranSansRegular;
+    src: url('../fonts/IRANSansXFaNum-Regular.woff');
+}
+@font-face {
+    font-family: IranSansBold;
+    src: url('../fonts/IRANSansXFaNum-Bold.woff');
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-login{
+        display: none;
+    }
+    ul.horiz-nav{
+        display: none;
+    }
+    .main-div{
+        margin-right: 0px !important;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .dash-nav{
+        display: none;
+    }
+}
+
+
+body{
+    font-family: IranSansRegular !important;
+}
+.btn-menu{
+    padding-left: 110px; 
+    padding-right: 20px;
+}
+.dash-nav{
+    overflow: hidden;
+}
+.main-div{
+    margin-right: 230px;
+}
+
+.btn-login-dashboard{
+    margin-left: 80px !important;
+}
+.nav-link:hover{
+    color: #176B87 !important;
+}
+.horiz-nav{
+    width: 230px !important;
+    display: block;
+}
+.vertical-navbar{
+    min-height: 100% !important;
+}
+
+.footer-sec{
+    margin-top: 4rem;
+}
+a{
+    color: #19c7a2;
+}
+a:hover{
+    color: #176B87;
+}
+.main-section{
+    margin-top:4rem;
+}
+.register{
+    margin-bottom:100px;
+}
+
+.bg-lightgreen{
+    background-color: #33BBC5 !important;
+}
+.bg-darkgreen-nohover{
+    background-color: #176B87;
+}
+
+.bg-darkgreen{
+    background-color: #176B87;
+}
+.bg-darkgreen:hover{
+    background-color: #64CCC5;
+}
+
+.active{
+    background-color: #64CCC5 !important ;
+}
