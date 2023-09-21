@@ -10,7 +10,7 @@ class UsersLinksController extends Controller
 {
     public function viewUsersLinks(){
         if(auth()->check()){
-            $links = Link::where('user_id',auth()->user()->id)->paginate(5);
+            $links = Link::where('user_id',auth()->user()->id)->paginate(10);
             return view('dashboard.userslinks',['links' => $links]);
         }
     }

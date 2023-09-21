@@ -23,5 +23,6 @@
         </tr>
         @endforeach
     </table>
+    {{$links->links()}}
 </div>
 </x-dashboard-layout>

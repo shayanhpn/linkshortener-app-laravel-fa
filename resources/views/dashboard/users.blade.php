@@ -22,6 +22,7 @@
         </tr>
         @endforeach
     </table>
+    {{$users->links()}}
 </div>
 
 </x-dashboard-layout>
