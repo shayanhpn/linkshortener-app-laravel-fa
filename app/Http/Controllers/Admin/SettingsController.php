@@ -15,7 +15,7 @@ class SettingsController extends Controller
 
     public function submitSettings(Request $request){
         $settingFields = $request->validate([
-            'logo' => ['nullable','max:10'],
+            'logo' => ['nullable','max:20'],
             'site_description' => ['nullable','max:100'],
             'title' => ['nullable','max:100'],
             'copyright' => ['nullable','max:100'],
