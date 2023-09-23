@@ -12,13 +12,13 @@
                           <h4 class="card-title my-4">حساب کاربری بسازید</h4>
                           <form action="{{route('register')}}" method="POST">
                             @csrf
-                            <input type="text" class="form-control @error('firstname') is-invalid @enderror" placeholder="نام" name="firstname">
+                            <input type="text" class="form-control @error('firstname') is-invalid @enderror" placeholder="نام" name="firstname" value="{{old('firstname')}}">
                             @error('firstname') <p class="text-danger">{{$message}}</p> @enderror
-                            <input type="text" class="form-control my-2 @error('lastname') is-invalid @enderror" placeholder="نام خانوادگی" name="lastname">
+                            <input type="text" class="form-control my-2 @error('lastname') is-invalid @enderror" placeholder="نام خانوادگی" name="lastname" value="{{old('lastname')}}">
                             @error('lastname') <p class="text-danger">{{$message}}</p> @enderror
-                            <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="ایمیل" name="email">
+                            <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="ایمیل" name="email" value="{{old('email')}}">
                             @error('email') <p class="text-danger">{{$message}}</p> @enderror
-                            <input type="text" class="form-control my-2 @error('phonenumber') is-invalid @enderror" placeholder="شماره همراه" name="phonenumber">
+                            <input type="text" class="form-control my-2 @error('phonenumber') is-invalid @enderror" placeholder="شماره همراه" name="phonenumber" value="{{old('phonenumber')}}">
                             @error('phonenumber') <p class="text-danger">{{$message}}</p> @enderror
                             <input type="password" class="form-control @error('password') is-invalid @enderror" placeholder="رمز عبور" name="password">
                             @error('password') <p class="text-danger">{{$message}}</p> @enderror

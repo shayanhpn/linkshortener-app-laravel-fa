@@ -2,12 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Main\MainController;
-use App\Http\Controllers\auth\LoginController;
-use App\Http\Controllers\auth\LogOutController;
-use App\Http\Controllers\auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogOutController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Admin\AllUsersController;
 use App\Http\Controllers\Admin\SettingsController;
-use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DeleteUserController;
 use App\Http\Controllers\captcha\CaptchaController;
 use App\Http\Controllers\Admin\UpdateUserController;

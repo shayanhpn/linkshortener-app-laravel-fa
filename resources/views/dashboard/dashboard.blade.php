@@ -5,7 +5,7 @@
                     <div class="card-body">
                       <h5 class="card-title">تعداد کل کاربران</h5>
                       <p><i class="fa fa-users" aria-hidden="true"></i></p>
-                      <p class="card-text">+20</p>
+                      <p class="card-text">{{$users->count()}}</p>
                     </div>
                 </div>
             </div>
@@ -14,7 +14,7 @@
                     <div class="card-body">
                       <h5 class="card-title">تعداد کل لینک ها</h5>
                       <p><i class="fa fa-link" aria-hidden="true"></i></p>
-                      <p class="card-text">+20</p>
+                      <p class="card-text">{{$links->count()}}</p>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                     <div class="card-body">
                       <h5 class="card-title">تنظیمات</h5>
                       <p><i class="fa fa-cog" aria-hidden="true"></i></p>
-                      <p class="card-text">4</p>
+                      <p class="card-text">*</p>
                     </div>
                 </div>
             </div>
