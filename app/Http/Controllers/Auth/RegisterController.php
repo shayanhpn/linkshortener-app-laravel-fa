@@ -27,6 +27,7 @@ class RegisterController extends Controller
             'lastname.max' => 'لطفا از حروف کمتری استفاده کنید',
             'email.required' => 'وارد کردن ایمیل الزامی است',
             'email.email' => 'ایمیل صحیح را وارد کنید',
+            'emai.unique' => 'این ایمیل قبلا انتخاب شده است',
             'password' => 'وارد کردن رمز عبور الزامی است',
             'password.confirmed' => 'رمز عبور یکسان نمی باشد',
             'phonenumber.numeric' => 'لطفا از اعداد برای شماره همراه استفاده کنید',

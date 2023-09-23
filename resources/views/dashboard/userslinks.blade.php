@@ -18,7 +18,7 @@
             <td><a href="{{$link->source_link}}">{{route('redirect',$link->destination_link)}}</a></td>
             <td>{{$link->created_at}}</td>
             <td><div class="text-center">
-                <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="حذف"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                <a href="{{route('admin.delete.link',$link->id)}}" data-bs-toggle="tooltip" data-bs-placement="top" title="حذف"><i class="fa fa-trash" aria-hidden="true"></i></a>
             </div></td>
         </tr>
         @endforeach
