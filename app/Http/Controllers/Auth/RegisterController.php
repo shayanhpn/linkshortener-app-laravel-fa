@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 
 class RegisterController extends Controller
 {
+    // Register User Function
     public function registerUser(Request $request){
        $registerFields =  $request->validate([
             'firstname' => ['required','string','alpha','max:50'],

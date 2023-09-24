@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 
 class UsersLinksController extends Controller
 {
+    // View Users Links
     public function viewUsersLinks(){
         if(auth()->check()){
             $links = Link::where('user_id',auth()->user()->id)->paginate(10);

@@ -21,9 +21,12 @@ class MainController extends Controller
         return view('main.login');
     }
 
+    // View Register Page
     public function showRegisterPage(){
         return view('main.register');
     }
+
+    // View About Page
     public function showAboutPage(){
         return view('main.about');
     }

@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 
 class LogOutController extends Controller
 {
+    // LogOut User Function
     public function logoutUser(){
         auth()->logout();
         return redirect()->route('login')->with('danger','شما خارج شدید');

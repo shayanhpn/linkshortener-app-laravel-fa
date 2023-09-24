@@ -40,6 +40,7 @@ class User extends Authenticatable
         
     }
 
+    // Define A Relationship Between The User Model And The Link Model
     public function links(){
         return $this->hasMany(Link::class);
     }

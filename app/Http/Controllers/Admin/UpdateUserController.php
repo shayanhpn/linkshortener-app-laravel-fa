@@ -9,12 +9,15 @@ use App\Http\Controllers\Controller;
 
 class UpdateUserController extends Controller
 {
+    // View Update User Page
     public function viewUpdateUser(User $id){
         if(auth()->user()->id == $id->id){
             return view('dashboard.update-user',['user' => $id]);
         }
         return back()->with('danger','شما مجاز به این عملیات نمی باشید');
     }
+
+    // Update User Function
     public function updateUser(Request $request, User $user){
         $updateFields = $request->validate([
             'firstname' => ['required','max:20'],

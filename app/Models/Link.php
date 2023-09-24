@@ -16,11 +16,13 @@ class Link extends Model
         'source_link'
     ];
 
+    // Convert Date To Jalali Date
     public static function boot(){
         parent::boot();
         static::bootJalali();
     }
 
+    // Generate Unique Random 6 length String For Links
     public static function genRandomStr(){
         do{
             $randString = str_shuffle('abcdefghijklmnopqrstuvwxyz1234567890');
@@ -30,6 +32,7 @@ class Link extends Model
         return $subStr;
     }
 
+    // Define A Relationship Between The Link Model And The User Model
     public function user(){
         return $this->belongsTo(User::class);
     }

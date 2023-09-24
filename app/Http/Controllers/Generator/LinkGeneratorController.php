@@ -9,6 +9,7 @@ use Illuminate\Validation\ValidationException;
 
 class LinkGeneratorController extends Controller
 {
+    // Link Generator Function
     public function generateLink(Request $request){
         $linkFields = $request->validate([
             'sourceLink' => ['required','url:http,https,ftp'],

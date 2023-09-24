@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/footer.css')}}">
 
-    <title>AdmiLink</title>
+    <title>{{optinal($setting)->title}}</title>
 </head>
 <body class="bg-light h-100">
     <ul class="nav flex-column bg-dark horiz-nav position-fixed h-100">

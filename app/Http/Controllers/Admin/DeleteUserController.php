@@ -8,9 +8,12 @@ use Illuminate\Http\Request;
 
 class DeleteUserController extends Controller
 {
+    // View Delete User
     public function viewDeleteUser(User $user){
         return view('dashboard.delete-user',compact('user'));
     }
+
+    // Delete User Function
     public function deleteUser(User $user){
         if($user->id == auth()->user()->id){
             return back()->with('danger','شما نمیتوانید حساب کاربری خود را حذف کنید');

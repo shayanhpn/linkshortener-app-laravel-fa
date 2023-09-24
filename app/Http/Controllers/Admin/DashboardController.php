@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {
+    // Show Dashboard Page
     public function showDashboardPage(){
         $links = Link::orderBy('created_at','desc')->limit(5)->get();
         $users = User::all();

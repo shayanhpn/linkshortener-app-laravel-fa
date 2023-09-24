@@ -11,7 +11,7 @@ class Setting extends Model
     use HasFactory;
     use DateToJalali;
 
-
+    // Convert Date To Jalali Date
     public static function boot(){
         parent::boot();
         static::bootJalali();

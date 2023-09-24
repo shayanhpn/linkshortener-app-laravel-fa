@@ -8,11 +8,13 @@ use Illuminate\Http\Request;
 
 class SettingsController extends Controller
 {
+    // View Settings Page
     public function viewSettingsPage(){
         $setting = Setting::firstOrCreate([]);
         return view('dashboard.settings',compact('setting'));
     }
 
+    // Set Or Update Setting Function
     public function submitSettings(Request $request){
         $settingFields = $request->validate([
             'logo' => ['nullable','max:20'],

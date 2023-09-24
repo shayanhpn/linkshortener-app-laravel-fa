@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
+    // View Login User
     public function loginUser(Request $request){
         $loginFields = $request->validate([
             'email' => ['required','email'],
