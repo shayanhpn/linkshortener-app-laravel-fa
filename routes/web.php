@@ -36,7 +36,7 @@ Route::post('/logout',[LogOutController::class,'logoutUser'])->name('logout');
 //Show Register Page
 Route::get('/register',[MainController::class,'showRegisterPage'])->name('view.register');
 
-//Register Page
+//Register
 Route::post('/register',[RegisterController::class,'registerUser'])->name('register');
 
 //Show Dashboard Page
