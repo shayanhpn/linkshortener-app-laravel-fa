@@ -15,7 +15,7 @@ class RegisterController extends Controller
        $registerFields =  $request->validate([
             'firstname' => ['required','string','alpha','max:50'],
             'lastname' => ['required','string','alpha','max:100'],
-            'email' => ['required','email','unique:users'],
+            'email' => ['required','email','max:255','unique:users'],
             'password' => ['required','confirmed'],
             'phonenumber' => ['required','numeric'],
             'captcha' => ['required','captcha'],
@@ -29,6 +29,7 @@ class RegisterController extends Controller
             'email.required' => 'وارد کردن ایمیل الزامی است',
             'email.email' => 'ایمیل صحیح را وارد کنید',
             'emai.unique' => 'این ایمیل قبلا انتخاب شده است',
+            'email.max' => 'تعداد کارکتر بیش از حد مجاز',
             'password' => 'وارد کردن رمز عبور الزامی است',
             'password.confirmed' => 'رمز عبور یکسان نمی باشد',
             'phonenumber.numeric' => 'لطفا از اعداد برای شماره همراه استفاده کنید',

@@ -12,7 +12,7 @@ class LinkGeneratorController extends Controller
     // Link Generator Function
     public function generateLink(Request $request){
         $linkFields = $request->validate([
-            'sourceLink' => ['required','url:http,https,ftp'],
+            'sourceLink' => ['required','url:http,https,ftp','max:255'],
             'captcha' => ['required','captcha']
         ],[
             'sourceLink.required' => 'وارد کردن لینک الزامی است',

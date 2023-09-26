@@ -23,13 +23,14 @@ class UpdateUserController extends Controller
             'firstname' => ['required','max:20'],
             'lastname' => ['required' ,'max:20'],
             'phonenumber' => ['required','max:12'],
-            'email' => ['required','email',Rule::unique('users')->ignore($user->id)],
+            'email' => ['required','max:255','email',Rule::unique('users')->ignore($user->id)],
         ],[
             'firstname.required' => 'وارد کردن نام الزامی است',
             'lastname.required' => 'وارد کردن نام خانوادگی الزامی است',
             'email.required' => 'وارد کردن ایمیل الزامی است',
             'email.email' => 'ایمیل صحیح را وارد کنید',
             'email.unique' => 'این آدرس ایمیل قبلا توسط فرد دیگری انتخاب شده است',
+            'email.max' => 'تعداد کارکتر بیش از حد مجاز',
             'phonenumber.required' => 'وارد کردن شماره تلفن همراه الزامی است'
         ]);
 
