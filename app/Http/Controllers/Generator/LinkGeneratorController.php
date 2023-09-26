@@ -18,7 +18,8 @@ class LinkGeneratorController extends Controller
             'sourceLink.required' => 'وارد کردن لینک الزامی است',
             'sourceLink.url' => 'لطفا آدرس اینترنتی صحیح را با رعایت پروتکل  وارد نمایید...مثال: https://google.com',
             'captcha.required' => 'وارد کردن کد امنیتی الزامی است',
-            'captcha.captcha' => 'لطفا کد امنیتی صحیح را وارد کنید'
+            'captcha.captcha' => 'لطفا کد امنیتی صحیح را وارد کنید',
+            'email.max' => 'تعداد کارکتر بیش از حد مجاز',
         ]);
 
 
